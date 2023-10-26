@@ -5,7 +5,8 @@ import { theme } from "../../styles/Theme";
 export const HeaderMenu = (props: { menuItems: Array<string> }) => {
   return (
     <StyledHeaderMenu>
-
+      
+<ul>
       {props.menuItems.map((item: string, index: number) => {
         return <ListItem key={index}>
           <Link href="">
@@ -20,16 +21,24 @@ export const HeaderMenu = (props: { menuItems: Array<string> }) => {
         </ListItem>
 
       })}
-
+</ul>
     </StyledHeaderMenu>
   );
 };
 
 const StyledHeaderMenu = styled.nav`
+
+ul{
 justify-content: center;
 display: flex;
 gap: 50px;
-    
+}
+
+
+@media ${theme.media.tablet}{
+display: none;
+
+}
 `
 
 
