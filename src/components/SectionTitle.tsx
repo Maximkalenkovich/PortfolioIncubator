@@ -1,13 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 import { theme } from "../styles/Theme";
+import { font } from '../styles/Common';
 
 export const SectionTitle = styled.h2`
 align-items: center;
+
+${font({family: "'Josefin Sans', sans-serif", weight: 600, fmax: 36, fmin: 30, })}
    text-align: center;
-font-family: 'Josefin Sans', sans-serif;
-font-size: 36px;
-font-weight: 600;
 letter-spacing: 5px;
 margin-bottom: 90px;
 
@@ -24,6 +24,11 @@ position: relative;
    left: 50%;
    bottom: -30px;
    transform: translateX(-50%);
+
+@media ${theme.media.mobile}{
+   bottom: -24px;
+
+}
 
 }
 `
