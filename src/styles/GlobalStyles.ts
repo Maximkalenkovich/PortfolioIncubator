@@ -22,11 +22,12 @@ export const GlobalStyles = createGlobalStyle`
   -moz-osx-font-smoothing: grayscale;
   color: ${theme.colors.font};
   line-height: 1.2;
-  
+
 }
 
 section {
   padding: 100px 0;
+overflow: hidden;
 
   @media ${theme.media.mobile}{
     padding: 80px;

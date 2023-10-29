@@ -14,7 +14,7 @@ return(
         <Containers>
         <SectionTitle>My Works</SectionTitle>
            <TabMenu menuItems={worksItems} />
-          <FlexWrapper justify="space-between" align="flex-start">
+          <FlexWrapper justify={"space-between"} align={"flex-start"} wrap={'wrap'}>
             <Work src={socialImg} title = {"Social Network"} text = {"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit."} />
             <Work src={timerImg} title = {"Timer"}  text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit  ut labore et dolore magna aliqua Ut enim"}/>
           </FlexWrapper>
@@ -27,9 +27,10 @@ return(
 };
 
 const StyledWorks = styled.section`
-    min-height: 80vh;
-    background-color: #b4b45a;
-    list-style: none;
+
+${FlexWrapper}{
+    gap:30px;
+}
 
 
 `

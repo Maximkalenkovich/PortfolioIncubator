@@ -23,7 +23,6 @@ export const Slider = () => {
 
 const StyledSlider = styled.div`
     max-width: 500px;
-border: 1px solid red;
 
     `
 const Slide = styled.div`
