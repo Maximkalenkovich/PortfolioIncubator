@@ -1,6 +1,4 @@
-import React from "react";
 import styled from "styled-components";
-import { theme } from "../../../../styles/Theme";
 import { LinkWork } from "../../../../components/link/LinkWork";
 
 export const TabMenu = (props: {menuItems:Array<string> }) => {

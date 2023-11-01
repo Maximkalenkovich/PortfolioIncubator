@@ -6,8 +6,6 @@ export const DesktopMenu: React.FC <{ menuItems: Array<string> }> = (props: { me
   return (
     <S.DesktopMenu>
       <Menu menuItems={props.menuItems}/>
-      
-
     </S.DesktopMenu>
   );
 };
