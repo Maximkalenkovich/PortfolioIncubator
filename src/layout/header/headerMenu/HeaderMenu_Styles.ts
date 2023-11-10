@@ -27,6 +27,7 @@ color: ${theme.colors.accent};
   span{
     display: inline-block;
     transform: translateY(-50%);
+    
   }
 }
 `

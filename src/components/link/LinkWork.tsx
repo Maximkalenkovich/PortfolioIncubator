@@ -1,9 +1,10 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { theme } from "../../styles/Theme";
 
 
+
     
-export const LinkWork = styled.a `
+export const LinkWork = styled.a<{active?: boolean}> `
 font-size: 14px;
 font-weight: 400;
 letter-spacing: 1px;
@@ -29,6 +30,10 @@ z-index: 0;
    left: 0px;
    right: 0px;
    z-index: -1;
+
+   ${props => props.active && css<{active?: boolean}>`
+    height: 10px;
+   `}
   
 }
 

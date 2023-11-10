@@ -1,22 +1,31 @@
 import styled from "styled-components";
 import { LinkWork } from "../../../../components/link/LinkWork";
 
-export const TabMenu = (props: {menuItems:Array<string> }) => {
+export type typeStutusTabs = "all" | "landing" | "react" | "spa"
+
+type tabMenuPropsType = {
+  tabsItems: Array<{ title: string, status: typeStutusTabs }>
+  changeFilterStatus: (value:  typeStutusTabs ) => void
+  curentFilterStatus: typeStutusTabs
+  
+}
+
+export const TabMenu = (props: tabMenuPropsType ) => {
   return (
     <StyledTabMenu>
-        <ul>
-{props.menuItems.map((item: string, index:number)=>{
-return <ListItem key={index}>
-  <LinkWork href="#">{item}</LinkWork>
-  </ListItem>
+      <ul>
+        {props.tabsItems.map((item, index: number) => {
+          return <ListItem key={index}>
+            <LinkWork active={props.curentFilterStatus === item.status} as= {"button"} onClick={()=>{props.changeFilterStatus(item.status)}}>{item.title}</LinkWork>
+          </ListItem>
 
-})}
-</ul>
+        })}
+      </ul>
     </StyledTabMenu>
   );
 };
 
-const StyledTabMenu = styled.nav `
+const StyledTabMenu = styled.nav`
 ul{
     display: flex;
     /* gap: 20px; */
@@ -29,7 +38,7 @@ ul{
 
 `
 
-const ListItem= styled.li `
+const ListItem = styled.li`
 
 
 `
