@@ -86,6 +86,10 @@ white-space: nowrap;
 const MainTitle = styled.h1`
 ${font({fmax: 27, fmin: 20, weight: 400})}
 
+p{
+    display: none;
+}
+
 /* font-size: 27px;
 font-weight: 400; */
 
