@@ -1,8 +1,9 @@
 import { css, styled } from "styled-components"
 import { theme } from "../../../styles/Theme"
+import { Link } from "react-scroll"
 
 
-const Link = styled.a`
+const NavLink = styled(Link)`
 text-align: center;
 font-family:"Josefin Sans", sans-serif;
 font-size: 30px;
@@ -10,6 +11,7 @@ font-style: normal;
 font-weight: 400;
 line-height: 55px; /* 110% */
 color: transparent;
+cursor: pointer;
 `
 
 const Mask = styled.span`
@@ -21,6 +23,7 @@ height: 50%;
 overflow: hidden;
 //outline: 1px solid red;
 color: ${theme.colors.accent};
+cursor: pointer;
 
 & + & {
   top: 50%;
@@ -178,7 +181,7 @@ display: none;
 `
 
 export const S = {
-    Link,
+    NavLink,
     ListItem,
     Mask,
     MobileMenu,

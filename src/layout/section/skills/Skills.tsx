@@ -42,7 +42,7 @@ export const Skills = () => {
     return (
 
 
-        <S.Skills>
+        <S.Skills id="skills">
             <Containers>
                 <SectionTitle>My Skills</SectionTitle>
                 <FlexWrapper wrap="wrap">

@@ -10,7 +10,7 @@ import { Containers } from "../../../components/slider/Containers";
 export const Testimony: React.FC = () => {
 
     return (
-        <StyledTestimony>
+        <StyledTestimony id="testimony">
             <Containers>
                 <SectionTitle>Testimony</SectionTitle>
                 <FlexWrapper direction="column" align="center">
