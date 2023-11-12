@@ -24,6 +24,7 @@ overflow: hidden;
 //outline: 1px solid red;
 color: ${theme.colors.accent};
 cursor: pointer;
+transition: 0.2s ease-in-out;
 
 & + & {
   top: 50%;
@@ -52,6 +53,7 @@ position: relative;
    z-index: 1;
 
    transform: scale(0);
+   transition: 0.2s ease-in-out;
    }
 
 

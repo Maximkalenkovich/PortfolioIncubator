@@ -44,6 +44,7 @@ const ImageWrapper = styled.div`
         left:50%;
         top:50%;
         transform: translate(-50%);
+        transition: 0.2s ease-in-out;
 
          &::before{
             width: 100%;
@@ -61,6 +62,7 @@ const ImageWrapper = styled.div`
         top: 0;
         bottom: 0;
         opacity: 0;
+        transition: 0.2s ease-in-out;
     }
     
     

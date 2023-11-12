@@ -30,6 +30,8 @@ z-index: 0;
    left: 0px;
    right: 0px;
    z-index: -1;
+   height: 0;
+   transition: 0.2s ease-in-out;
 
    ${props => props.active && css<{active?: boolean}>`
     height: 10px;
